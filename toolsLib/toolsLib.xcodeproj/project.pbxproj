@@ -26,6 +26,10 @@
 		9698487D22E15F02006AEA11 /* WeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9698487C22E15F02006AEA11 /* WeakProxy.m */; };
 		9698488122E160C2006AEA11 /* WaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9698488022E160C2006AEA11 /* WaveView.m */; };
 		9698488222E162AB006AEA11 /* WaveView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9698487F22E160C2006AEA11 /* WaveView.h */; };
+		969848DB22E1B208006AEA11 /* RMGroupShadowTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 969848DA22E1B208006AEA11 /* RMGroupShadowTableView.m */; };
+		969848E022E1B396006AEA11 /* ShadowTableViewUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 969848DF22E1B396006AEA11 /* ShadowTableViewUI.m */; };
+		969848E122E1B42C006AEA11 /* ShadowTableViewUI.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 969848DE22E1B396006AEA11 /* ShadowTableViewUI.h */; };
+		969848E722E1B572006AEA11 /* RMGroupShadowTableView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 969848D922E1B208006AEA11 /* RMGroupShadowTableView.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -35,6 +39,8 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				969848E722E1B572006AEA11 /* RMGroupShadowTableView.h in CopyFiles */,
+				969848E122E1B42C006AEA11 /* ShadowTableViewUI.h in CopyFiles */,
 				9698488222E162AB006AEA11 /* WaveView.h in CopyFiles */,
 				9698487522E156A9006AEA11 /* toolsLib.h in CopyFiles */,
 			);
@@ -50,6 +56,10 @@
 		9698487C22E15F02006AEA11 /* WeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakProxy.m; sourceTree = "<group>"; };
 		9698487F22E160C2006AEA11 /* WaveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaveView.h; sourceTree = "<group>"; };
 		9698488022E160C2006AEA11 /* WaveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaveView.m; sourceTree = "<group>"; };
+		969848D922E1B208006AEA11 /* RMGroupShadowTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMGroupShadowTableView.h; sourceTree = "<group>"; };
+		969848DA22E1B208006AEA11 /* RMGroupShadowTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMGroupShadowTableView.m; sourceTree = "<group>"; };
+		969848DE22E1B396006AEA11 /* ShadowTableViewUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadowTableViewUI.h; sourceTree = "<group>"; };
+		969848DF22E1B396006AEA11 /* ShadowTableViewUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShadowTableViewUI.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +92,7 @@
 		9698487122E156A9006AEA11 /* toolsLib */ = {
 			isa = PBXGroup;
 			children = (
+				969848DD22E1B366006AEA11 /* ViewModel */,
 				9698487E22E1602F006AEA11 /* View */,
 				9698487222E156A9006AEA11 /* toolsLib.h */,
 				9698487322E156A9006AEA11 /* toolsLib.m */,
@@ -94,10 +105,21 @@
 		9698487E22E1602F006AEA11 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				969848D922E1B208006AEA11 /* RMGroupShadowTableView.h */,
+				969848DA22E1B208006AEA11 /* RMGroupShadowTableView.m */,
 				9698487F22E160C2006AEA11 /* WaveView.h */,
 				9698488022E160C2006AEA11 /* WaveView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		969848DD22E1B366006AEA11 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				969848DE22E1B396006AEA11 /* ShadowTableViewUI.h */,
+				969848DF22E1B396006AEA11 /* ShadowTableViewUI.m */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +202,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				969848E022E1B396006AEA11 /* ShadowTableViewUI.m in Sources */,
+				969848DB22E1B208006AEA11 /* RMGroupShadowTableView.m in Sources */,
 				9698487D22E15F02006AEA11 /* WeakProxy.m in Sources */,
 				9698487422E156A9006AEA11 /* toolsLib.m in Sources */,
 				9698488122E160C2006AEA11 /* WaveView.m in Sources */,
