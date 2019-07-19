@@ -6,9 +6,26 @@
 	objectVersion = 50;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		969848D322E1A514006AEA11 /* pickup */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 969848D422E1A514006AEA11 /* Build configuration list for PBXAggregateTarget "pickup" */;
+			buildPhases = (
+				969848D722E1A522006AEA11 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = pickup;
+			productName = pickup;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		9698487422E156A9006AEA11 /* toolsLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 9698487322E156A9006AEA11 /* toolsLib.m */; };
 		9698487522E156A9006AEA11 /* toolsLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9698487222E156A9006AEA11 /* toolsLib.h */; };
+		9698487D22E15F02006AEA11 /* WeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9698487C22E15F02006AEA11 /* WeakProxy.m */; };
+		9698488122E160C2006AEA11 /* WaveView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9698488022E160C2006AEA11 /* WaveView.m */; };
+		9698488222E162AB006AEA11 /* WaveView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9698487F22E160C2006AEA11 /* WaveView.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,6 +35,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				9698488222E162AB006AEA11 /* WaveView.h in CopyFiles */,
 				9698487522E156A9006AEA11 /* toolsLib.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -28,6 +46,10 @@
 		9698486F22E156A9006AEA11 /* libtoolsLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtoolsLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9698487222E156A9006AEA11 /* toolsLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = toolsLib.h; sourceTree = "<group>"; };
 		9698487322E156A9006AEA11 /* toolsLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = toolsLib.m; sourceTree = "<group>"; };
+		9698487B22E15F02006AEA11 /* WeakProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakProxy.h; sourceTree = "<group>"; };
+		9698487C22E15F02006AEA11 /* WeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakProxy.m; sourceTree = "<group>"; };
+		9698487F22E160C2006AEA11 /* WaveView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WaveView.h; sourceTree = "<group>"; };
+		9698488022E160C2006AEA11 /* WaveView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaveView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +82,22 @@
 		9698487122E156A9006AEA11 /* toolsLib */ = {
 			isa = PBXGroup;
 			children = (
+				9698487E22E1602F006AEA11 /* View */,
 				9698487222E156A9006AEA11 /* toolsLib.h */,
 				9698487322E156A9006AEA11 /* toolsLib.m */,
+				9698487B22E15F02006AEA11 /* WeakProxy.h */,
+				9698487C22E15F02006AEA11 /* WeakProxy.m */,
 			);
 			path = toolsLib;
+			sourceTree = "<group>";
+		};
+		9698487E22E1602F006AEA11 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9698487F22E160C2006AEA11 /* WaveView.h */,
+				9698488022E160C2006AEA11 /* WaveView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -98,6 +132,9 @@
 					9698486E22E156A9006AEA11 = {
 						CreatedOnToolsVersion = 10.2.1;
 					};
+					969848D322E1A514006AEA11 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
 				};
 			};
 			buildConfigurationList = 9698486A22E156A9006AEA11 /* Build configuration list for PBXProject "toolsLib" */;
@@ -113,16 +150,39 @@
 			projectRoot = "";
 			targets = (
 				9698486E22E156A9006AEA11 /* toolsLib */,
+				969848D322E1A514006AEA11 /* pickup */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		969848D722E1A522006AEA11 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Sets the target folders and the final framework product.\nPRODUCT_NAME=\"libtoolsLib\"\nPROJECT_NAME=\"toolsLib\"\n\nOUTPUT_NAME=\"libTools\"\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nDEPLOY_DIR=${SRCROOT}/../lib\nDEPLOY_HEADER_DIR=${DEPLOY_DIR}/Header/\n\n# Working dir.\nDEVICE_NAME=${BUILD_DIR}/Release-iphoneos/${PRODUCT_NAME}.a\nSIMULATOR_NAME=${BUILD_DIR}/Release-iphonesimulator/${PRODUCT_NAME}.a\nHEADER_DIR=${BUILD_DIR}/Release-iphoneos/include/${PROJECT_NAME}\n\n# -configuration ${CONFIGURATION}\n# Clean and Building both architectures.\nxcodebuild -configuration \"Release\" ARCHS=\"armv7 arm64\" VALID_ARCHS=\"arm64 armv7 armv7s\" -target ${PROJECT_NAME} BUILD_DIR=${BUILD_DIR} -sdk iphoneos clean build\nxcodebuild -configuration \"Release\" ARCHS=\"x86_64\" VALID_ARCHS=\"x86_64\" -target ${PROJECT_NAME} BUILD_DIR=${BUILD_DIR} -sdk iphonesimulator clean build\nrm -rf ${DEPLOY_HEADER_DIR}/${PROJECT_NAME}\ncp -R ${HEADER_DIR} ${DEPLOY_HEADER_DIR}\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_NAME}\" \"${SIMULATOR_NAME}\" -output \"${DEPLOY_DIR}/${OUTPUT_NAME}.a\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9698486B22E156A9006AEA11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9698487D22E15F02006AEA11 /* WeakProxy.m in Sources */,
 				9698487422E156A9006AEA11 /* toolsLib.m in Sources */,
+				9698488122E160C2006AEA11 /* WaveView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,7 +240,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -233,7 +293,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -263,6 +323,22 @@
 			};
 			name = Release;
 		};
+		969848D522E1A514006AEA11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		969848D622E1A514006AEA11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -280,6 +356,15 @@
 			buildConfigurations = (
 				9698487922E156A9006AEA11 /* Debug */,
 				9698487A22E156A9006AEA11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		969848D422E1A514006AEA11 /* Build configuration list for PBXAggregateTarget "pickup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				969848D522E1A514006AEA11 /* Debug */,
+				969848D622E1A514006AEA11 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
