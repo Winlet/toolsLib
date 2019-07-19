@@ -1,5 +1,18 @@
-# toolsLib
+# 描述
 个人一些工具库的封装
+
+# 概览：主要内容如下：
+## 水波视图 
+    初始化view
+    UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 245)];
+    headerView.backgroundColor = [UIColor colorWithRed:229/255.f green:0/255.f blue:17/255.f alpha:1];
+    [self.view addSubview:headerView];
+    self.waveView = [WaveView addToView:headerView withFrame:CGRectMake(0, CGRectGetHeight(headerView.frame) - 4.5, CGRectGetWidth(headerView.frame), 5)];
+    动画
+    [self.waveView wave];
+    
+
+# toolsLib
 (源文件文件夹)
 
 
