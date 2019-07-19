@@ -12,7 +12,7 @@
     [self.waveView wave];
 
 ## 卡片式带阴影tableview
-    初始化
+    >1.初始化
     RMGroupShadowTableView *table  = [[RMGroupShadowTableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
     table.groupShadowDelegate = self.tableViewUI;
     table.groupShadowDataSource = self.tableViewUI;
@@ -21,13 +21,13 @@
     table.separatorStyle = UITableViewCellSeparatorStyleNone;
     table.backgroundColor = [UIColor groupTableViewBackgroundColor];
     [self.view addSubview:table];
-    ViewModel tableViewUI
+    >2.ViewModel tableViewUI
     self.tableViewUI = [[ShadowTableViewUI alloc]init];
     /* 数据为NSString则传递NSString数组  @[@"1",@"2",@"3",@"asdfareg"];
         否则传递NSDictionary数组*/
     self.tableViewUI.dataArray = @[@{@"1":@"123"},@{@"2":@"asd"},@{@"3":@"asdfareg"}];
     self.tableViewUI.heightForRow = 52;
-    tableViewUI的代理方法可修改cell和相应点击
+    >3.tableViewUI的代理方法可修改cell和相应点击
     
 
 # 文件结构
