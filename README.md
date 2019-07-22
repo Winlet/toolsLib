@@ -3,16 +3,16 @@
 
 # 概览：主要内容如下：
 ## 水波视图 
-    初始化view
+    >1. 初始化view
     UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), 245)];
     headerView.backgroundColor = [UIColor colorWithRed:229/255.f green:0/255.f blue:17/255.f alpha:1];
     [self.view addSubview:headerView];
     self.waveView = [WaveView addToView:headerView withFrame:CGRectMake(0, CGRectGetHeight(headerView.frame) - 4.5, CGRectGetWidth(headerView.frame), 5)];
-    动画
+    >2.动画
     [self.waveView wave];
 
 ## 卡片式带阴影tableview
-    初始化
+    >1.初始化
     RMGroupShadowTableView *table  = [[RMGroupShadowTableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
     table.groupShadowDelegate = self.tableViewUI;
     table.groupShadowDataSource = self.tableViewUI;
@@ -21,13 +21,13 @@
     table.separatorStyle = UITableViewCellSeparatorStyleNone;
     table.backgroundColor = [UIColor groupTableViewBackgroundColor];
     [self.view addSubview:table];
-    ViewModel tableViewUI
+    >2.ViewModel tableViewUI
     self.tableViewUI = [[ShadowTableViewUI alloc]init];
     /* 数据为NSString则传递NSString数组  @[@"1",@"2",@"3",@"asdfareg"];
         否则传递NSDictionary数组*/
     self.tableViewUI.dataArray = @[@{@"1":@"123"},@{@"2":@"asd"},@{@"3":@"asdfareg"}];
     self.tableViewUI.heightForRow = 52;
-    tableViewUI的代理方法可修改cell和相应点击
+    >3.tableViewUI的代理方法可修改cell和相应点击
     
 
 # 文件结构
