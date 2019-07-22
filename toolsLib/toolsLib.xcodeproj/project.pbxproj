@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		966A763122E5A2CE00B9F6D5 /* ZJPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 966A762F22E5A2CE00B9F6D5 /* ZJPickerView.m */; };
 		9698487422E156A9006AEA11 /* toolsLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 9698487322E156A9006AEA11 /* toolsLib.m */; };
 		9698487522E156A9006AEA11 /* toolsLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9698487222E156A9006AEA11 /* toolsLib.h */; };
 		9698487D22E15F02006AEA11 /* WeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9698487C22E15F02006AEA11 /* WeakProxy.m */; };
@@ -49,6 +50,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		966A762F22E5A2CE00B9F6D5 /* ZJPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJPickerView.m; sourceTree = "<group>"; };
+		966A763022E5A2CE00B9F6D5 /* ZJPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJPickerView.h; sourceTree = "<group>"; };
 		9698486F22E156A9006AEA11 /* libtoolsLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtoolsLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9698487222E156A9006AEA11 /* toolsLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = toolsLib.h; sourceTree = "<group>"; };
 		9698487322E156A9006AEA11 /* toolsLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = toolsLib.m; sourceTree = "<group>"; };
@@ -105,6 +108,8 @@
 		9698487E22E1602F006AEA11 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				966A763022E5A2CE00B9F6D5 /* ZJPickerView.h */,
+				966A762F22E5A2CE00B9F6D5 /* ZJPickerView.m */,
 				969848D922E1B208006AEA11 /* RMGroupShadowTableView.h */,
 				969848DA22E1B208006AEA11 /* RMGroupShadowTableView.m */,
 				9698487F22E160C2006AEA11 /* WaveView.h */,
@@ -204,6 +209,7 @@
 			files = (
 				969848E022E1B396006AEA11 /* ShadowTableViewUI.m in Sources */,
 				969848DB22E1B208006AEA11 /* RMGroupShadowTableView.m in Sources */,
+				966A763122E5A2CE00B9F6D5 /* ZJPickerView.m in Sources */,
 				9698487D22E15F02006AEA11 /* WeakProxy.m in Sources */,
 				9698487422E156A9006AEA11 /* toolsLib.m in Sources */,
 				9698488122E160C2006AEA11 /* WaveView.m in Sources */,

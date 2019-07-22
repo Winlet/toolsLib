@@ -10,4 +10,7 @@
 
 @interface toolsLib : NSObject
 
+//获取日期 yyyy-M-d
+@property (nonatomic,strong) NSMutableArray *yearMDArray;
+
 @end
