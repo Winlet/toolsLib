@@ -549,7 +549,12 @@ static const CGFloat canceBtnWidth = 68.0f; // cance button or sure button heigh
         NSMutableArray *tempSelectedRowArray = [NSMutableArray arrayWithCapacity:self.component];
         for (NSUInteger i = 0; i < self.component; i++) {
             NSArray *componentArray = [self getDataWithComponent:i];
-            NSString *componentString = [selectedArray objectAtIndex:i];
+            NSString *componentString;
+            if (selectedArray.count>i) {
+                componentString = [selectedArray objectAtIndex:i];
+            }else{
+                componentString = @"";
+            }
             if (componentArray.count) {
                 [componentArray enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL * _Nonnull stop) {
                     NSString *title = @"";
@@ -559,10 +564,6 @@ static const CGFloat canceBtnWidth = 68.0f; // cance button or sure button heigh
                         title = [NSString stringWithFormat:@"%@", obj];
                     }
                     if (![title isEqualToString:@""]) {
-                        // discussion: scroll to select row error when solving content similar, only appear when there is only one component.
-                        // reference: https://github.com/Abnerzj/ZJPickerView/issues/4
-                        //            https://github.com/Abnerzj/ZJPickerView/issues/5
-                        
                         if ([componentString isEqualToString:title]) {
                             [tempSelectedRowArray addObject:@(idx)];
                             [weakself.pickerView reloadComponent:i];
@@ -575,11 +576,11 @@ static const CGFloat canceBtnWidth = 68.0f; // cance button or sure button heigh
             }
         }
         
-        if (tempSelectedRowArray.count != self.component) {
-            for (NSUInteger i = 0; i < self.component; i++) {
-                [self.pickerView selectRow:0 inComponent:i animated:NO];
-            }
-        }
+//        if (tempSelectedRowArray.count != self.component) {
+//            for (NSUInteger i = 0; i < self.component; i++) {
+//                [self.pickerView selectRow:0 inComponent:i animated:NO];
+//            }
+//        }
     }
 }
 
