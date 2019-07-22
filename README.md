@@ -29,7 +29,26 @@
     self.tableViewUI.heightForRow = 52;
     >3.tableViewUI的代理方法可修改cell和相应点击
     
-
+## 选择器视图
+    1.自定义信息,具体查看相应key值
+    NSDictionary *dic = @{ZJPickerViewPropertyIsScrollToSelectedRowKey:@"YES",
+    ZJPickerViewPropertyTipLabelTextKey:@"2016,5,1",
+    };
+    2.self.dataArray 数据列表 Array[
+                Dictionary{
+                Array[
+                    Dictionary{
+                    Array[...]:Key
+                    }
+                ]:Key
+                }
+    ]
+    [ZJPickerView zj_showWithDataList:self.dataArray propertyDict:dic completion:^(NSString * _Nullable selectContent) {
+    NSArray *selectStrings = [selectContent componentsSeparatedByString:@","];
+    NSString * result= [selectStrings componentsJoinedByString:@"-"];
+    NSLog(@"%@",result);
+    }];
+    
 # 文件结构
 >1. toolsLib  源文件文件夹
 >2. lib  最终静态库通用文件文件夹
