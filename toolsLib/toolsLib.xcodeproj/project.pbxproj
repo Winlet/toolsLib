@@ -11,7 +11,7 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 969848D422E1A514006AEA11 /* Build configuration list for PBXAggregateTarget "pickup" */;
 			buildPhases = (
-				969848D722E1A522006AEA11 /* ShellScript */,
+				969848D722E1A522006AEA11 /* Run Script */,
 			);
 			dependencies = (
 			);
@@ -22,6 +22,8 @@
 
 /* Begin PBXBuildFile section */
 		966A763122E5A2CE00B9F6D5 /* ZJPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 966A762F22E5A2CE00B9F6D5 /* ZJPickerView.m */; };
+		96827DC522F1636800937C91 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 96827DC422F1636800937C91 /* NSObject+MJCoding.m */; };
+		9694392222E69CC800A3D566 /* ZJPickerView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 966A763022E5A2CE00B9F6D5 /* ZJPickerView.h */; };
 		9698487422E156A9006AEA11 /* toolsLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 9698487322E156A9006AEA11 /* toolsLib.m */; };
 		9698487522E156A9006AEA11 /* toolsLib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9698487222E156A9006AEA11 /* toolsLib.h */; };
 		9698487D22E15F02006AEA11 /* WeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9698487C22E15F02006AEA11 /* WeakProxy.m */; };
@@ -31,6 +33,12 @@
 		969848E022E1B396006AEA11 /* ShadowTableViewUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 969848DF22E1B396006AEA11 /* ShadowTableViewUI.m */; };
 		969848E122E1B42C006AEA11 /* ShadowTableViewUI.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 969848DE22E1B396006AEA11 /* ShadowTableViewUI.h */; };
 		969848E722E1B572006AEA11 /* RMGroupShadowTableView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 969848D922E1B208006AEA11 /* RMGroupShadowTableView.h */; };
+		96B0C9052383E01100797FAD /* PGIndexBannerSubiew.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B0C9012383E01000797FAD /* PGIndexBannerSubiew.m */; };
+		96B0C9062383E01100797FAD /* NewPagedFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B0C9022383E01000797FAD /* NewPagedFlowView.m */; };
+		96B0C9072383E05100797FAD /* PGIndexBannerSubiew.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 96B0C9032383E01000797FAD /* PGIndexBannerSubiew.h */; };
+		96B0C9082383E05500797FAD /* NewPagedFlowView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 96B0C9042383E01100797FAD /* NewPagedFlowView.h */; };
+		96B0C9092383E25300797FAD /* LQFRadioButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 96C1E22A231F5C4C00F94784 /* LQFRadioButton.h */; };
+		96C1E22C231F5C4C00F94784 /* LQFRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C1E22B231F5C4C00F94784 /* LQFRadioButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +48,10 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				96B0C9092383E25300797FAD /* LQFRadioButton.h in CopyFiles */,
+				96B0C9082383E05500797FAD /* NewPagedFlowView.h in CopyFiles */,
+				96B0C9072383E05100797FAD /* PGIndexBannerSubiew.h in CopyFiles */,
+				9694392222E69CC800A3D566 /* ZJPickerView.h in CopyFiles */,
 				969848E722E1B572006AEA11 /* RMGroupShadowTableView.h in CopyFiles */,
 				969848E122E1B42C006AEA11 /* ShadowTableViewUI.h in CopyFiles */,
 				9698488222E162AB006AEA11 /* WaveView.h in CopyFiles */,
@@ -52,6 +64,8 @@
 /* Begin PBXFileReference section */
 		966A762F22E5A2CE00B9F6D5 /* ZJPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJPickerView.m; sourceTree = "<group>"; };
 		966A763022E5A2CE00B9F6D5 /* ZJPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJPickerView.h; sourceTree = "<group>"; };
+		96827DC322F1636800937C91 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		96827DC422F1636800937C91 /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
 		9698486F22E156A9006AEA11 /* libtoolsLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libtoolsLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9698487222E156A9006AEA11 /* toolsLib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = toolsLib.h; sourceTree = "<group>"; };
 		9698487322E156A9006AEA11 /* toolsLib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = toolsLib.m; sourceTree = "<group>"; };
@@ -63,6 +77,12 @@
 		969848DA22E1B208006AEA11 /* RMGroupShadowTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMGroupShadowTableView.m; sourceTree = "<group>"; };
 		969848DE22E1B396006AEA11 /* ShadowTableViewUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ShadowTableViewUI.h; sourceTree = "<group>"; };
 		969848DF22E1B396006AEA11 /* ShadowTableViewUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ShadowTableViewUI.m; sourceTree = "<group>"; };
+		96B0C9012383E01000797FAD /* PGIndexBannerSubiew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PGIndexBannerSubiew.m; sourceTree = "<group>"; };
+		96B0C9022383E01000797FAD /* NewPagedFlowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewPagedFlowView.m; sourceTree = "<group>"; };
+		96B0C9032383E01000797FAD /* PGIndexBannerSubiew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGIndexBannerSubiew.h; sourceTree = "<group>"; };
+		96B0C9042383E01100797FAD /* NewPagedFlowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewPagedFlowView.h; sourceTree = "<group>"; };
+		96C1E22A231F5C4C00F94784 /* LQFRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LQFRadioButton.h; sourceTree = "<group>"; };
+		96C1E22B231F5C4C00F94784 /* LQFRadioButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LQFRadioButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +115,8 @@
 		9698487122E156A9006AEA11 /* toolsLib */ = {
 			isa = PBXGroup;
 			children = (
+				96827DC322F1636800937C91 /* NSObject+MJCoding.h */,
+				96827DC422F1636800937C91 /* NSObject+MJCoding.m */,
 				969848DD22E1B366006AEA11 /* ViewModel */,
 				9698487E22E1602F006AEA11 /* View */,
 				9698487222E156A9006AEA11 /* toolsLib.h */,
@@ -108,12 +130,15 @@
 		9698487E22E1602F006AEA11 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				96B0C9002383E00100797FAD /* 卡片轮播 */,
 				966A763022E5A2CE00B9F6D5 /* ZJPickerView.h */,
 				966A762F22E5A2CE00B9F6D5 /* ZJPickerView.m */,
 				969848D922E1B208006AEA11 /* RMGroupShadowTableView.h */,
 				969848DA22E1B208006AEA11 /* RMGroupShadowTableView.m */,
 				9698487F22E160C2006AEA11 /* WaveView.h */,
 				9698488022E160C2006AEA11 /* WaveView.m */,
+				96C1E22A231F5C4C00F94784 /* LQFRadioButton.h */,
+				96C1E22B231F5C4C00F94784 /* LQFRadioButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -125,6 +150,17 @@
 				969848DF22E1B396006AEA11 /* ShadowTableViewUI.m */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		96B0C9002383E00100797FAD /* 卡片轮播 */ = {
+			isa = PBXGroup;
+			children = (
+				96B0C9042383E01100797FAD /* NewPagedFlowView.h */,
+				96B0C9022383E01000797FAD /* NewPagedFlowView.m */,
+				96B0C9032383E01000797FAD /* PGIndexBannerSubiew.h */,
+				96B0C9012383E01000797FAD /* PGIndexBannerSubiew.m */,
+			);
+			path = "卡片轮播";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,7 +219,7 @@
 /* End PBXProject section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		969848D722E1A522006AEA11 /* ShellScript */ = {
+		969848D722E1A522006AEA11 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -192,13 +228,14 @@
 			);
 			inputPaths = (
 			);
+			name = "Run Script";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Sets the target folders and the final framework product.\nPRODUCT_NAME=\"libtoolsLib\"\nPROJECT_NAME=\"toolsLib\"\n\nOUTPUT_NAME=\"libTools\"\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nDEPLOY_DIR=${SRCROOT}/../lib\nDEPLOY_HEADER_DIR=${DEPLOY_DIR}/Header/\n\n# Working dir.\nDEVICE_NAME=${BUILD_DIR}/Release-iphoneos/${PRODUCT_NAME}.a\nSIMULATOR_NAME=${BUILD_DIR}/Release-iphonesimulator/${PRODUCT_NAME}.a\nHEADER_DIR=${BUILD_DIR}/Release-iphoneos/include/${PROJECT_NAME}\n\n# -configuration ${CONFIGURATION}\n# Clean and Building both architectures.\nxcodebuild -configuration \"Release\" ARCHS=\"armv7 arm64\" VALID_ARCHS=\"arm64 armv7 armv7s\" -target ${PROJECT_NAME} BUILD_DIR=${BUILD_DIR} -sdk iphoneos clean build\nxcodebuild -configuration \"Release\" ARCHS=\"x86_64\" VALID_ARCHS=\"x86_64\" -target ${PROJECT_NAME} BUILD_DIR=${BUILD_DIR} -sdk iphonesimulator clean build\nrm -rf ${DEPLOY_HEADER_DIR}/${PROJECT_NAME}\ncp -R ${HEADER_DIR} ${DEPLOY_HEADER_DIR}\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_NAME}\" \"${SIMULATOR_NAME}\" -output \"${DEPLOY_DIR}/${OUTPUT_NAME}.a\"\n";
+			shellScript = "# Sets the target folders and the final framework product.\nPRODUCT_NAME=\"libtoolsLib\"\nPROJECT_NAME=\"toolsLib\"\n\nOUTPUT_NAME=\"libTools\"\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nDEPLOY_DIR=${SRCROOT}/../../Tools\nDEPLOY_HEADER_DIR=${DEPLOY_DIR}/Header/\n\n# Working dir.\nDEVICE_NAME=${BUILD_DIR}/Release-iphoneos/${PRODUCT_NAME}.a\nSIMULATOR_NAME=${BUILD_DIR}/Release-iphonesimulator/${PRODUCT_NAME}.a\nHEADER_DIR=${BUILD_DIR}/Release-iphoneos/include/${PROJECT_NAME}\n\n# -configuration ${CONFIGURATION}\n# Clean and Building both architectures.\nxcodebuild -configuration \"Release\" ARCHS=\"armv7 arm64\" VALID_ARCHS=\"arm64 armv7 armv7s\" -target ${PROJECT_NAME} BUILD_DIR=${BUILD_DIR} -sdk iphoneos clean build\nxcodebuild -configuration \"Release\" ARCHS=\"x86_64\" VALID_ARCHS=\"x86_64\" -target ${PROJECT_NAME} BUILD_DIR=${BUILD_DIR} -sdk iphonesimulator clean build\nrm -rf ${DEPLOY_HEADER_DIR}/${PROJECT_NAME}\ncp -R ${HEADER_DIR} ${DEPLOY_HEADER_DIR}\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_NAME}\" \"${SIMULATOR_NAME}\" -output \"${DEPLOY_DIR}/${OUTPUT_NAME}.a\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -207,10 +244,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96827DC522F1636800937C91 /* NSObject+MJCoding.m in Sources */,
+				96C1E22C231F5C4C00F94784 /* LQFRadioButton.m in Sources */,
 				969848E022E1B396006AEA11 /* ShadowTableViewUI.m in Sources */,
 				969848DB22E1B208006AEA11 /* RMGroupShadowTableView.m in Sources */,
 				966A763122E5A2CE00B9F6D5 /* ZJPickerView.m in Sources */,
+				96B0C9052383E01100797FAD /* PGIndexBannerSubiew.m in Sources */,
 				9698487D22E15F02006AEA11 /* WeakProxy.m in Sources */,
+				96B0C9062383E01100797FAD /* NewPagedFlowView.m in Sources */,
 				9698487422E156A9006AEA11 /* toolsLib.m in Sources */,
 				9698488122E160C2006AEA11 /* WaveView.m in Sources */,
 			);
