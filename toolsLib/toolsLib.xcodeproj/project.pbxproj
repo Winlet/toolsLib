@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		9642EF1D23C8256100F3D1C8 /* UILongPressLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9642EF1B23C8256100F3D1C8 /* UILongPressLabel.m */; };
+		9642EF1E23C8257700F3D1C8 /* UILongPressLabel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9642EF1C23C8256100F3D1C8 /* UILongPressLabel.h */; };
 		966A763122E5A2CE00B9F6D5 /* ZJPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 966A762F22E5A2CE00B9F6D5 /* ZJPickerView.m */; };
 		96827DC522F1636800937C91 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 96827DC422F1636800937C91 /* NSObject+MJCoding.m */; };
 		9694392222E69CC800A3D566 /* ZJPickerView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 966A763022E5A2CE00B9F6D5 /* ZJPickerView.h */; };
@@ -48,6 +50,7 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				9642EF1E23C8257700F3D1C8 /* UILongPressLabel.h in CopyFiles */,
 				96B0C9092383E25300797FAD /* LQFRadioButton.h in CopyFiles */,
 				96B0C9082383E05500797FAD /* NewPagedFlowView.h in CopyFiles */,
 				96B0C9072383E05100797FAD /* PGIndexBannerSubiew.h in CopyFiles */,
@@ -62,6 +65,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9642EF1B23C8256100F3D1C8 /* UILongPressLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILongPressLabel.m; sourceTree = "<group>"; };
+		9642EF1C23C8256100F3D1C8 /* UILongPressLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILongPressLabel.h; sourceTree = "<group>"; };
 		966A762F22E5A2CE00B9F6D5 /* ZJPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJPickerView.m; sourceTree = "<group>"; };
 		966A763022E5A2CE00B9F6D5 /* ZJPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJPickerView.h; sourceTree = "<group>"; };
 		96827DC322F1636800937C91 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
@@ -139,6 +144,8 @@
 				9698488022E160C2006AEA11 /* WaveView.m */,
 				96C1E22A231F5C4C00F94784 /* LQFRadioButton.h */,
 				96C1E22B231F5C4C00F94784 /* LQFRadioButton.m */,
+				9642EF1C23C8256100F3D1C8 /* UILongPressLabel.h */,
+				9642EF1B23C8256100F3D1C8 /* UILongPressLabel.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -247,6 +254,7 @@
 				96827DC522F1636800937C91 /* NSObject+MJCoding.m in Sources */,
 				96C1E22C231F5C4C00F94784 /* LQFRadioButton.m in Sources */,
 				969848E022E1B396006AEA11 /* ShadowTableViewUI.m in Sources */,
+				9642EF1D23C8256100F3D1C8 /* UILongPressLabel.m in Sources */,
 				969848DB22E1B208006AEA11 /* RMGroupShadowTableView.m in Sources */,
 				966A763122E5A2CE00B9F6D5 /* ZJPickerView.m in Sources */,
 				96B0C9052383E01100797FAD /* PGIndexBannerSubiew.m in Sources */,
