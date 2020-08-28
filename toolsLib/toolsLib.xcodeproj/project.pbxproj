@@ -24,9 +24,11 @@
 		96019F1924591E50004A531F /* EPYMerchantCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96019F1824591E4F004A531F /* EPYMerchantCardViewController.m */; };
 		96019F1E24591F0E004A531F /* EPYHomeReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96019F1C24591F0D004A531F /* EPYHomeReusableView.m */; };
 		96019F2124591F17004A531F /* EPYCollectionLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 96019F1F24591F17004A531F /* EPYCollectionLayout.m */; };
+		9609CD4924ECFFCC0022E662 /* EPYShowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9609CD4724ECFFCB0022E662 /* EPYShowView.m */; };
 		9642EF1D23C8256100F3D1C8 /* UILongPressLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9642EF1B23C8256100F3D1C8 /* UILongPressLabel.m */; };
 		9642EF1E23C8257700F3D1C8 /* UILongPressLabel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9642EF1C23C8256100F3D1C8 /* UILongPressLabel.h */; };
 		9642EF3C23CDA26000F3D1C8 /* NSObject+KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 9642EF3A23CDA26000F3D1C8 /* NSObject+KVO.m */; };
+		965D30E624F8D8E000FCC206 /* UIControl+EPYQuickLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = 965D30E524F8D8E000FCC206 /* UIControl+EPYQuickLimit.m */; };
 		966A763122E5A2CE00B9F6D5 /* ZJPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 966A762F22E5A2CE00B9F6D5 /* ZJPickerView.m */; };
 		96827DC522F1636800937C91 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 96827DC422F1636800937C91 /* NSObject+MJCoding.m */; };
 		9694392222E69CC800A3D566 /* ZJPickerView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 966A763022E5A2CE00B9F6D5 /* ZJPickerView.h */; };
@@ -76,10 +78,14 @@
 		96019F1D24591F0E004A531F /* EPYHomeReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EPYHomeReusableView.xib; sourceTree = "<group>"; };
 		96019F1F24591F17004A531F /* EPYCollectionLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPYCollectionLayout.m; sourceTree = "<group>"; };
 		96019F2024591F17004A531F /* EPYCollectionLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPYCollectionLayout.h; sourceTree = "<group>"; };
+		9609CD4724ECFFCB0022E662 /* EPYShowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPYShowView.m; sourceTree = "<group>"; };
+		9609CD4824ECFFCC0022E662 /* EPYShowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPYShowView.h; sourceTree = "<group>"; };
 		9642EF1B23C8256100F3D1C8 /* UILongPressLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILongPressLabel.m; sourceTree = "<group>"; };
 		9642EF1C23C8256100F3D1C8 /* UILongPressLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILongPressLabel.h; sourceTree = "<group>"; };
 		9642EF3A23CDA26000F3D1C8 /* NSObject+KVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVO.m"; sourceTree = "<group>"; };
 		9642EF3B23CDA26000F3D1C8 /* NSObject+KVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVO.h"; sourceTree = "<group>"; };
+		965D30E424F8D8E000FCC206 /* UIControl+EPYQuickLimit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+EPYQuickLimit.h"; sourceTree = "<group>"; };
+		965D30E524F8D8E000FCC206 /* UIControl+EPYQuickLimit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+EPYQuickLimit.m"; sourceTree = "<group>"; };
 		966A762F22E5A2CE00B9F6D5 /* ZJPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJPickerView.m; sourceTree = "<group>"; };
 		966A763022E5A2CE00B9F6D5 /* ZJPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJPickerView.h; sourceTree = "<group>"; };
 		96827DC322F1636800937C91 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
@@ -128,6 +134,19 @@
 			path = CollectView;
 			sourceTree = "<group>";
 		};
+		965D30E324F8D85000FCC206 /* categroy */ = {
+			isa = PBXGroup;
+			children = (
+				965D30E424F8D8E000FCC206 /* UIControl+EPYQuickLimit.h */,
+				965D30E524F8D8E000FCC206 /* UIControl+EPYQuickLimit.m */,
+				96827DC322F1636800937C91 /* NSObject+MJCoding.h */,
+				96827DC422F1636800937C91 /* NSObject+MJCoding.m */,
+				9642EF3B23CDA26000F3D1C8 /* NSObject+KVO.h */,
+				9642EF3A23CDA26000F3D1C8 /* NSObject+KVO.m */,
+			);
+			path = categroy;
+			sourceTree = "<group>";
+		};
 		9698486622E156A9006AEA11 = {
 			isa = PBXGroup;
 			children = (
@@ -147,12 +166,10 @@
 		9698487122E156A9006AEA11 /* toolsLib */ = {
 			isa = PBXGroup;
 			children = (
+				965D30E324F8D85000FCC206 /* categroy */,
 				96019F1A24591EFE004A531F /* CollectView */,
-				96827DC322F1636800937C91 /* NSObject+MJCoding.h */,
-				96827DC422F1636800937C91 /* NSObject+MJCoding.m */,
 				969848DD22E1B366006AEA11 /* ViewModel */,
 				9698487E22E1602F006AEA11 /* View */,
-				9698487222E156A9006AEA11 /* toolsLib.h */,
 				9698487322E156A9006AEA11 /* toolsLib.m */,
 				9698487B22E15F02006AEA11 /* WeakProxy.h */,
 				9698487C22E15F02006AEA11 /* WeakProxy.m */,
@@ -163,8 +180,8 @@
 		9698487E22E1602F006AEA11 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9642EF3B23CDA26000F3D1C8 /* NSObject+KVO.h */,
-				9642EF3A23CDA26000F3D1C8 /* NSObject+KVO.m */,
+				9609CD4824ECFFCC0022E662 /* EPYShowView.h */,
+				9609CD4724ECFFCB0022E662 /* EPYShowView.m */,
 				96B0C9002383E00100797FAD /* 卡片轮播 */,
 				966A763022E5A2CE00B9F6D5 /* ZJPickerView.h */,
 				966A762F22E5A2CE00B9F6D5 /* ZJPickerView.m */,
@@ -176,6 +193,7 @@
 				96C1E22B231F5C4C00F94784 /* LQFRadioButton.m */,
 				9642EF1C23C8256100F3D1C8 /* UILongPressLabel.h */,
 				9642EF1B23C8256100F3D1C8 /* UILongPressLabel.m */,
+				9698487222E156A9006AEA11 /* toolsLib.h */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -283,10 +301,12 @@
 			files = (
 				96827DC522F1636800937C91 /* NSObject+MJCoding.m in Sources */,
 				96C1E22C231F5C4C00F94784 /* LQFRadioButton.m in Sources */,
+				9609CD4924ECFFCC0022E662 /* EPYShowView.m in Sources */,
 				96019F2124591F17004A531F /* EPYCollectionLayout.m in Sources */,
 				969848E022E1B396006AEA11 /* ShadowTableViewUI.m in Sources */,
 				9642EF1D23C8256100F3D1C8 /* UILongPressLabel.m in Sources */,
 				969848DB22E1B208006AEA11 /* RMGroupShadowTableView.m in Sources */,
+				965D30E624F8D8E000FCC206 /* UIControl+EPYQuickLimit.m in Sources */,
 				96019F1E24591F0E004A531F /* EPYHomeReusableView.m in Sources */,
 				966A763122E5A2CE00B9F6D5 /* ZJPickerView.m in Sources */,
 				96B0C9052383E01100797FAD /* PGIndexBannerSubiew.m in Sources */,
@@ -418,6 +438,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../../LoginModule/Module/Pods/AFNetworking\"";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../LoginModule/Module/EasyPay_New/Class/Network\"",
+					"\"$(SRCROOT)/../../LoginModule/Module/Pods/AFNetworking\"",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -429,6 +454,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = "\"$(SRCROOT)/../../LoginModule/Module/Pods/AFNetworking\"";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/../../LoginModule/Module/EasyPay_New/Class/Network\"",
+					"\"$(SRCROOT)/../../LoginModule/Module/Pods/AFNetworking\"",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

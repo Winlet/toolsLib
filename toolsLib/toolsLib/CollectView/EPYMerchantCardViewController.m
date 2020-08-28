@@ -18,6 +18,11 @@
 
 @implementation EPYMerchantCardViewController
 
+//+(instancetype)viewClass{
+//    EPYCheckingView *v = [[[NSBundle mainBundle] loadNibNamed:@"EPYCheckingView" owner:self options:nil] lastObject];
+//    v.backgroundColor = [UIColorFromRGB(0x333333) colorWithAlphaComponent:0.7];
+//    return v;
+//}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

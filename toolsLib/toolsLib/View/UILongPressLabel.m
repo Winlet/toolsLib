@@ -7,6 +7,8 @@
 //
 
 #import "UILongPressLabel.h"
+#import "EPYNetworkManager.h"
+#import <AFNetworking/AFNetworking.h>
 
 @implementation UILongPressLabel
 
